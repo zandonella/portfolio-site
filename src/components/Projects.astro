@@ -12,11 +12,12 @@ import labelsImage from "../assets/labels.png";
   <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
     <ProjectCard
       title="CatCall"
-      description="A microservice-based, Tinder-style cat adoption platform featuring card-based liking, location-based recommendations, and Dockerized deployment with Node.js, React, and MongoDB"
+      description="Microservice-based, Tinder-style cat adoption platform featuring card-based liking, location-based recommendations, and Dockerized deployment with Node.js, React, and MongoDB. Deployed live with Docker and Docker Compose."
       skills={[
         "React",
         "Node.js",
         "Express",
+        "APIs",
         "MongoDB",
         "Tailwind CSS",
         "Docker",
@@ -26,15 +27,30 @@ import labelsImage from "../assets/labels.png";
       repo="https://github.com/zandonella/CatCall"
     />
     <ProjectCard
+      title="Issue Navigator"
+      description="Chrome extension that streamlines GitHub issue and pull request browsing with customizable keyboard shortcuts and advanced filtering, featuring GitHub API integration, optional OAuth authentication, and local storage for fast, secure navigation."
+      skills={[
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "APIs",
+        "Chrome Extensions",
+        "OAuth 2.0",
+      ]}
+      imageURL={IssueNavigatorIcon}
+      live="https://chromewebstore.google.com/detail/issue-navigator/pddmcdakmeciplbfgjngpemhjpjlcmbg"
+      repo="https://github.com/zandonella/IssueNavigator"
+    />
+    <ProjectCard
       title="Dice Slayer"
-      description="A turn-based dungeon crawler built for the Adafruit Circuit Playground using C++, featuring dice-based combat, upgrade mechanics, and real-time visual feedback via NeoPixels"
+      description="Turn-based dungeon crawler built for the Adafruit Circuit Playground using C++, featuring dice-based combat, upgrade mechanics, and real-time visual feedback via NeoPixels."
       skills={["Arduino", "C++"]}
       imageURL={DiceSlayerImage}
       repo="https://github.com/zandonella/Dice-Slayer"
     />
     <ProjectCard
       title="Portfolio Website"
-      description="A personal portfolio site built with Astro and React to showcase my work, resume, and skills"
+      description="Personal portfolio site built with Astro and React to showcase my work, resume, and skills, featuring a responsive design styled with Tailwind CSS."
       skills={["HTML", "React", "Astro", "Tailwind CSS"]}
       imageURL={ZandoDevImage}
       live="https://zando.dev"
@@ -42,7 +58,7 @@ import labelsImage from "../assets/labels.png";
     />
     <ProjectCard
       title="CAT Label Maker"
-      description="A Python-based command-line tool that generates printable PDF labels with images from product catalog numbers, designed for small-scale inventory systems requiring efficient label generation"
+      description="Python-based command-line tool that generates printable PDF labels with images from product catalog numbers, designed for small-scale inventory systems requiring efficient label generation."
       skills={["Python"]}
       imageURL={labelsImage}
     />
