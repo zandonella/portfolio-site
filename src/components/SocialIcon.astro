@@ -6,7 +6,7 @@ const { href } = Astro.props;
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    class="group bg-foreground rounded-xl p-3 outline-1 outline-zinc-800 transition-colors duration-200 hover:bg-gray-900 focus-visible:bg-gray-900 focus-visible:outline focus-visible:outline-indigo-800 active:bg-gray-800"
+    class="group bg-foreground rounded-xl p-3 outline-1 outline-zinc-800 transition-colors duration-200 hover:bg-emerald-900/40 hover:ring-2 hover:ring-emerald-900 focus-visible:bg-emerald-900/40 focus-visible:ring-2 focus-visible:ring-emerald-900 focus-visible:outline focus-visible:outline-emerald-800 active:bg-emerald-800"
 >
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const { href } = Astro.props;
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="h-6 w-6 stroke-white transition-colors duration-200 group-hover:stroke-indigo-500 group-focus-visible:stroke-indigo-500 group-active:stroke-indigo-300"
+        class="h-6 w-6 stroke-white transition-colors duration-200 group-hover:stroke-emerald-500 group-focus-visible:stroke-emerald-500 group-active:stroke-emerald-300"
     >
         <slot />
     </svg>

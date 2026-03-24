@@ -22,3 +22,13 @@
     }
   }
 }
+
+:root {
+  --background: oklch(0.1445 0.0047 263.79);
+  --foreground: oklch(0.1864 0.0088 264.34);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
