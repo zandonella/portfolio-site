@@ -1,0 +1,24 @@
+---
+const { href } = Astro.props;
+---
+
+<a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="group bg-foreground rounded-xl p-3 outline-1 outline-zinc-800 transition-colors duration-200 hover:bg-gray-900 focus-visible:bg-gray-900 focus-visible:outline focus-visible:outline-indigo-800 active:bg-gray-800"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="h-6 w-6 stroke-white transition-colors duration-200 group-hover:stroke-indigo-500 group-focus-visible:stroke-indigo-500 group-active:stroke-indigo-300"
+    >
+        <slot />
+    </svg>
+</a>
