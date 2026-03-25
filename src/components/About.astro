@@ -6,28 +6,32 @@ import SocialIcons from "./SocialIcons.astro";
 ---
 
 <div
-  class="container mx-auto flex flex-col-reverse items-center gap-4 p-4 text-center md:flex-row md:items-start md:text-start"
+    class="container mx-auto flex flex-col-reverse items-center gap-4 p-4 text-center md:flex-row md:items-start md:text-start"
 >
-  <div class="flex flex-col items-center gap-4 md:items-start">
-    <div>
-      <h1 class="font-sans text-5xl font-bold tracking-tighter">
-        Hi, I'm Michael
-      </h1>
-      <p class="mt-4 pr-4 text-lg/6 text-gray-300">
-        20-year-old software engineer and student based in Corvallis, Oregon.
-        Currently attending Oregon State University, pursuing a degree in
-        Computer Science.
-      </p>
+    <div class="flex flex-col items-center gap-4 md:items-start">
+        <div>
+            <h1 class="font-sans text-5xl font-bold tracking-tighter">
+                Hi, I'm Michael
+            </h1>
+            <p class="mt-4 pr-4 text-lg/6 text-gray-300">
+                20-year-old software engineer and Computer Science student at
+                Oregon State University, <span
+                    class="font-bold text-emerald-500"
+                    >graduating June 2026</span
+                >. Relocating to
+                <span class="font-bold text-emerald-500">NJ/NYC</span> and seeking
+                full-time opportunities.
+            </p>
+        </div>
+        <div>
+            <p class="text-gray-400">Interested in my experience?</p>
+            <SocialIcons />
+        </div>
     </div>
-    <div>
-      <p class="text-gray-400">Interested in my experience?</p>
-      <SocialIcons />
-    </div>
-  </div>
-  <Image
-    src={Headshot}
-    alt="A headshot of Michael"
-    height="250"
-    class="rounded-2xl"
-  />
+    <Image
+        src={Headshot}
+        alt="A headshot of Michael"
+        height="250"
+        class="rounded-2xl"
+    />
 </div>
