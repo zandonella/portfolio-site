@@ -1,12 +1,47 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
 import CatCallImage from "../assets/catcall.zando.dev.jpg";
-import ZandoDevImage from "../assets/zando.dev.jpg";
+import ZandoDevImage from "../assets/zando.dev.png";
 import DiceSlayerImage from "../assets/arduino.jpg";
 import IssueNavigatorIcon from "../assets/IssueNavigatorIcon.png";
 import labelsImage from "../assets/labels.png";
+import YTSearchImage from "../assets/yt-search.png";
+import RotationsImage from "../assets/rotations-lol.png";
 
 const projects = [
+    {
+        title: "Rotations.lol",
+        description:
+            "Full-stack web application that tracks League of Legends shop rotations and sends daily notifications when wishlisted items become available. Ingests data from the League Client, stores a normalized Postgres catalog in Supabase, and delivers transactional emails via AWS SES.",
+        skills: [
+            "TypeScript",
+            "React",
+            "Supabase",
+            "PostgreSQL",
+            "AWS SES",
+            "Docker",
+            "Tailwind CSS",
+            "Node.js",
+        ],
+        imageURL: RotationsImage,
+        live: "https://rotations.lol",
+        repo: "https://github.com/zandonella/rotations-lol",
+    },
+    {
+        title: "YouTube Transcript Search",
+        description:
+            "Full-stack search system that indexes YouTube video transcripts to enable timestamp-level search across entire playlists. Uses yt-dlp for ingestion, Elasticsearch (BM25) for ranking, and a React frontend to surface precise moments within videos instead of entire results.",
+        skills: [
+            "Python",
+            "Elasticsearch",
+            "React",
+            "Flask",
+            "APIs",
+            "Information Retrieval",
+        ],
+        imageURL: YTSearchImage,
+        repo: "https://github.com/zandonella/yt-transcript-search",
+    },
     {
         title: "Issue Navigator",
         description:
@@ -40,14 +75,6 @@ const projects = [
         repo: "https://github.com/zandonella/CatCall",
     },
     {
-        title: "Dice Slayer",
-        description:
-            "Turn-based dungeon crawler built for the Adafruit Circuit Playground using C++, featuring dice-based combat, upgrade mechanics, and real-time visual feedback via NeoPixels.",
-        skills: ["Arduino", "C++"],
-        imageURL: DiceSlayerImage,
-        repo: "https://github.com/zandonella/Dice-Slayer",
-    },
-    {
         title: "Portfolio Website",
         description:
             "Personal portfolio site built with Astro and React to showcase my work, resume, and skills, featuring a responsive design styled with Tailwind CSS.",
@@ -55,6 +82,14 @@ const projects = [
         imageURL: ZandoDevImage,
         live: "https://zando.dev",
         repo: "https://github.com/zandonella/portfolio-site",
+    },
+    {
+        title: "Dice Slayer",
+        description:
+            "Turn-based dungeon crawler built for the Adafruit Circuit Playground using C++, featuring dice-based combat, upgrade mechanics, and real-time visual feedback via NeoPixels.",
+        skills: ["Arduino", "C++"],
+        imageURL: DiceSlayerImage,
+        repo: "https://github.com/zandonella/Dice-Slayer",
     },
     {
         title: "CAT Label Maker",
