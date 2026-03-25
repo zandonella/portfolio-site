@@ -10,7 +10,7 @@ export default function SkillBox({ className, skillName }) {
               className={`${className} colored inline-block scale-100 text-4xl text-slate-600 transition-all duration-200 ease-in-out group-hover:scale-120`}
             />
           </div>
-          <p className="text-sm font-medium text-white transition-colors">
+          <p className="text-sm font-medium whitespace-nowrap text-white transition-colors">
             {skillName}
           </p>
         </div>

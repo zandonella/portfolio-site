@@ -11,7 +11,7 @@ const skills = [
   { name: "Python", className: "devicon-python-plain" },
   { name: "HTML", className: "devicon-html5-plain" },
   { name: "CSS", className: "devicon-css3-plain" },
-  { name: "Tailwind", className: "devicon-tailwindcss-plain" },
+  { name: "Tailwind CSS", className: "devicon-tailwindcss-plain" },
   { name: "Vite", className: "devicon-vitejs-plain" },
   { name: "Astro", className: "devicon-astro-plain" },
   { name: "Express", className: "devicon-express-original" },
