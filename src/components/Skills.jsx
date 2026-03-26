@@ -28,7 +28,7 @@ export default function Skills() {
   return (
     <div>
       <div
-        className="container grid grid-cols-2 gap-4 py-4 md:grid-cols-6"
+        className="container grid grid-cols-3 gap-4 py-4 max-[420px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-6"
         onMouseLeave={() => setHovered(false)}
       >
         {skills.map((skill, index) => (
