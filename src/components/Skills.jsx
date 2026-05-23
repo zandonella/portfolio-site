@@ -12,10 +12,10 @@ const skills = [
 
   { name: "JavaScript", className: "devicon-javascript-plain" },
   { name: "Express", className: "devicon-express-original" },
-  { name: "Linux", className: "devicon-flask-plain" },
+  { name: "Terraform", className: "devicon-terraform-plain" },
   { name: "MongoDB", className: "devicon-mongodb-plain" },
   { name: "Elasticsearch", className: "devicon-elasticsearch-plain" },
-  { name: "Supabase", className: "devicon-supabase-plain" },
+  { name: "Kubernetes", className: "devicon-kubernetes-plain" },
 
   { name: "HTML", className: "devicon-html5-plain" },
   { name: "CSS", className: "devicon-css3-plain" },
