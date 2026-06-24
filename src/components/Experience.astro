@@ -5,80 +5,80 @@ import ExperiencePoint from "./ExperiencePoint.astro";
 ---
 
 <div class="container mt-4">
-    <div
-        id="switcher"
-        class="bg-foreground mb-2 grid w-full grid-cols-2 items-center justify-center rounded-lg p-1"
-    >
-        <ExperienceButton title="Work" active left />
-        <ExperienceButton title="Education" right />
-    </div>
-    <ExperienceContent id="Work" active>
-        <ExperiencePoint
-            imagePath="/OSUCrest.png"
-            link="https://oregonstate.edu/"
-            date="October 2025 - Present"
-            location="Software Engineering Tutor"
-            role="College of Engineering, Oregon State University"
-            bullets={[
-                "Improved technical problem-solving for 5-15 students per term across data structures, algorithms, and full-stack software engineering projects by pair-programming through implementations and explaining concepts",
-                "Expanded student understanding across Python, React, SQL, HTML, CSS, JavaScript, networking, security, debugging, and algorithmic problem solving by delivering targeted 1-on-1 technical instruction",
-            ]}
-        />
+  <div
+    id="switcher"
+    class="bg-foreground mb-2 grid w-full grid-cols-2 items-center justify-center rounded-lg p-1"
+  >
+    <ExperienceButton title="Work" active left />
+    <ExperienceButton title="Education" right />
+  </div>
+  <ExperienceContent id="Work" active>
+    <ExperiencePoint
+      imagePath="/OSUCrest.png"
+      link="https://oregonstate.edu/"
+      date="October 2025 - June 2026"
+      location="Software Engineering Tutor"
+      role="College of Engineering, Oregon State University"
+      bullets={[
+        "Improved technical problem-solving for 5-15 students per term across data structures, algorithms, and full-stack software engineering projects by pair-programming through implementations and explaining concepts",
+        "Expanded student understanding across Python, React, SQL, HTML, CSS, JavaScript, networking, security, debugging, and algorithmic problem solving by delivering targeted 1-on-1 technical instruction",
+      ]}
+    />
 
-        <ExperiencePoint
-            imagePath="/beaverstore.jpg"
-            link="https://osubeaverstore.com/"
-            date="June 2024 - July 2025"
-            location="E-Commerce Web Assistant"
-            role="OSU Beaver Store"
-            bullets={[
-                "Reduced back-stock item retrieval time by 55% by building a Python automation workflow that transformed catalog records and product images into printable inventory labels",
-                "Improved e-commerce data quality across thousands of product listings and 500+ digital assets by auditing catalog records, resolving content inconsistencies, and identifying items for photography or online reactivation",
-            ]}
-        />
-    </ExperienceContent>
+    <ExperiencePoint
+      imagePath="/beaverstore.jpg"
+      link="https://osubeaverstore.com/"
+      date="June 2024 - July 2025"
+      location="E-Commerce Web Assistant"
+      role="OSU Beaver Store"
+      bullets={[
+        "Reduced back-stock item retrieval time by 55% by building a Python automation workflow that transformed catalog records and product images into printable inventory labels",
+        "Improved e-commerce data quality across thousands of product listings and 500+ digital assets by auditing catalog records, resolving content inconsistencies, and identifying items for photography or online reactivation",
+      ]}
+    />
+  </ExperienceContent>
 
-    <ExperienceContent id="Education">
-        <ExperiencePoint
-            imagePath="/OSUCrest.png"
-            link="https://oregonstate.edu/"
-            date="September 2023 - June 2026"
-            location="Bachelor of Science in Computer Science"
-            role="Oregon State University"
-            bullets={[
-                "3.96 GPA",
-                "Relevant coursework: Software Engineering, Web Development, Data Structures, Algorithms, Operating Systems, Computer Networks, Web Security, Information Retrieval, System Administration, Usability Engineering, and Computer Architecture",
-                "Graduating June 2026",
-            ]}
-        />
-    </ExperienceContent>
+  <ExperienceContent id="Education">
+    <ExperiencePoint
+      imagePath="/OSUCrest.png"
+      link="https://oregonstate.edu/"
+      date="September 2023 - June 2026"
+      location="Bachelor of Science in Computer Science"
+      role="Oregon State University"
+      bullets={[
+        "3.96 GPA",
+        "Relevant coursework: Software Engineering, Web Development, Data Structures, Algorithms, Operating Systems, Computer Networks, Web Security, Information Retrieval, System Administration, Usability Engineering, and Computer Architecture",
+        "Graduated June 2026",
+      ]}
+    />
+  </ExperienceContent>
 
-    <script>
-        const workButton = document.getElementById("workButton");
-        const educationButton = document.getElementById("educationButton");
-        const workContent = document.getElementById("Work");
-        const educationContent = document.getElementById("Education");
+  <script>
+    const workButton = document.getElementById("workButton");
+    const educationButton = document.getElementById("educationButton");
+    const workContent = document.getElementById("Work");
+    const educationContent = document.getElementById("Education");
 
-        workButton.addEventListener("click", () => {
-            if (workButton?.hasAttribute("data-active")) {
-                return;
-            }
-            workButton?.toggleAttribute("data-active");
-            educationButton?.toggleAttribute("data-active");
+    workButton.addEventListener("click", () => {
+      if (workButton?.hasAttribute("data-active")) {
+        return;
+      }
+      workButton?.toggleAttribute("data-active");
+      educationButton?.toggleAttribute("data-active");
 
-            workContent.toggleAttribute("data-active");
-            educationContent.toggleAttribute("data-active");
-        });
+      workContent.toggleAttribute("data-active");
+      educationContent.toggleAttribute("data-active");
+    });
 
-        educationButton.addEventListener("click", () => {
-            if (educationButton?.hasAttribute("data-active")) {
-                return;
-            }
-            educationButton?.toggleAttribute("data-active");
-            workButton?.toggleAttribute("data-active");
+    educationButton.addEventListener("click", () => {
+      if (educationButton?.hasAttribute("data-active")) {
+        return;
+      }
+      educationButton?.toggleAttribute("data-active");
+      workButton?.toggleAttribute("data-active");
 
-            workContent.toggleAttribute("data-active");
-            educationContent.toggleAttribute("data-active");
-        });
-    </script>
+      workContent.toggleAttribute("data-active");
+      educationContent.toggleAttribute("data-active");
+    });
+  </script>
 </div>
